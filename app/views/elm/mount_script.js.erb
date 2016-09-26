@@ -24,6 +24,6 @@
   var embedDiv = currentScript.previousSibling;
 
   onLoad(function() {
-    Elm.embed(<%= raw module_name %>, embedDiv, <%= raw args.to_json %>);
+    Elm.Main.embed(<%= raw module_name %>, embedDiv, <%= raw args.to_json %>);
   });
 })();
